@@ -1,3 +1,11 @@
 <template>
-    
+    <lightning-card title="Record Creator" icon-name="standard:record">
+        
+        <div class="slds-m-around_medium">
+            <lightning-input label="Account Name" onchange={handleNameChange}> </lightning-input>
+            <lightning-input label="Contact Last Name" onchange={handleLastNameChange} field-level-help="Leave it empty to use Account Name as Contact Last Name."> </lightning-input>
+            <lightning-button label="Create Account and Contact" variant="brand" onclick={createRecords}> </lightning-button>
+        </div>
+
+    </lightning-card>
 </template>
